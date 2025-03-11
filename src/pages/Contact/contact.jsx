@@ -1,7 +1,7 @@
 import { motion, useAnimation } from 'framer-motion';
 import { ArrowLeft, ArrowUpRight, Check, Plus } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
-import './Contact.css';
+import './contact.css';
 
 const Contact = () => {
   const [currentView, setCurrentView] = useState('main');
