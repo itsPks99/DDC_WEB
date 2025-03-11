@@ -1,0 +1,74 @@
+.aboutImagesMoves-images-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .aboutImagesMoves-row {
+    display: flex;
+    padding: 10px 0;
+    width: max-content;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    position: relative;
+    left: -10%;
+  }
+  
+  .aboutImagesMoves-row.odd {
+    animation-name: moveRightToLeft;
+  }
+  
+  .aboutImagesMoves-row.even {
+    animation-name: moveLeftToRight;
+  }
+  
+  .aboutImagesMoves-item {
+    width: 350px;
+    height: 180px;
+    margin: 5px 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  .aboutImagesMoves-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @keyframes moveRightToLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes moveLeftToRight {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Pause animations when user prefers reduced motion */
+  @media (prefers-reduced-motion) {
+    .aboutImagesMoves-row {
+      animation: none;
+    }
+  }
+  
+  /* Scroll-based animation control */
+  .scroll-animate .aboutImagesMoves-row.odd {
+    transform: translateX(calc(var(--scroll-percent, 0) * -30%));
+  }
+  
+  .scroll-animate .aboutImagesMoves-row.even {
+    transform: translateX(calc(var(--scroll-percent, 0) * 30%));
+  }

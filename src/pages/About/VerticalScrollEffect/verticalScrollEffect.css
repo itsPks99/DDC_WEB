@@ -1,0 +1,153 @@
+.VerticalScrollEffectSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.VerticalScrollEffectTitleContainer {
+  padding: 4rem 2rem 2rem;
+  text-align: center;
+}
+
+.VerticalScrollEffectTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.VerticalScrollEffectTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #e10600;
+}
+
+.VerticalScrollEffectCardSection {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  height: calc(100vh - 150px);
+  scroll-behavior: smooth;
+}
+
+.VerticalScrollEffectCardSection::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.VerticalScrollEffectCard {
+  flex: 0 0 auto;
+  width: 350px;
+  height: 500px;
+  margin-right: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.VerticalScrollEffectCard:hover {
+  transform: translateY(-10px);
+}
+
+.VerticalScrollEffectCardImage {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.VerticalScrollEffectCardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.VerticalScrollEffectCard:hover .VerticalScrollEffectCardImage img {
+  transform: scale(1.05);
+}
+
+.VerticalScrollEffectCardContent {
+  padding: 1.5rem;
+}
+
+.VerticalScrollEffectCardContent h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.VerticalScrollEffectCardContent p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Animation for cards when they come into view */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.VerticalScrollEffectCard {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.VerticalScrollEffectCard:nth-child(1) { animation-delay: 0.1s; }
+.VerticalScrollEffectCard:nth-child(2) { animation-delay: 0.2s; }
+.VerticalScrollEffectCard:nth-child(3) { animation-delay: 0.3s; }
+.VerticalScrollEffectCard:nth-child(4) { animation-delay: 0.4s; }
+.VerticalScrollEffectCard:nth-child(5) { animation-delay: 0.5s; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .VerticalScrollEffectTitle {
+    font-size: 2.5rem;
+  }
+  
+  .VerticalScrollEffectCard {
+    width: 300px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .VerticalScrollEffectTitle {
+    font-size: 2rem;
+  }
+  
+  .VerticalScrollEffectCard {
+    width: 280px;
+    height: 420px;
+  }
+  
+  .VerticalScrollEffectCardContent h3 {
+    font-size: 1.25rem;
+  }
+  
+  .VerticalScrollEffectCardContent p {
+    font-size: 0.9rem;
+  }
+}

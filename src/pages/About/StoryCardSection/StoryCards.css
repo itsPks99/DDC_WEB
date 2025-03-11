@@ -1,0 +1,71 @@
+.storyCardsWrapper {
+  position: relative;
+  width: 100%;
+  height: 400vh; 
+}
+
+.storyCardsSection {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #e10600;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.storyCardsStack {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.storyCard {
+  position: absolute;
+  width: 80%;
+  max-width: 650px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  opacity: 0.3;
+  transform: scale(0.9);
+  transition: transform 0.5s ease-in-out;
+}
+
+.storyCard.active {
+  opacity: 1;
+  transform: scale(1);
+  position: sticky;
+  top: 20%;
+}
+
+.storyCardImage img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.storyCardContent {
+  padding: 20px;
+  text-align: center;
+  color: black;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .storyCard {
+    width: 90%;
+  }
+
+  .storyCardContent h3 {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,275 @@
+
+  
+  
+  .footerBody {
+    font-family: 'Gilroy', sans-serif; 
+    background-color: #121212;
+    color: #ffffff;
+    /* line-height: 1.6;    */
+    margin-top: 15px;
+   
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #cccccc;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Work With Us Section */
+  .work-with-us {
+    background-color: #121212;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .work-with-us-title {
+    font-size: 7rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    /* line-height: 1.2; */
+  }
+  
+  .work-with-us-title br {
+    display: block;
+  }
+  
+  .yes-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    background-color: #e60000; /* Red background */
+    border-radius: 100px;
+    padding: 7px;
+    width: 330px;
+    height: 135px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+  }
+  
+  .yes-button.hovered {
+    background-color: #00c853; /* Green background on hover */
+  }
+  
+  .circle {
+    position: absolute;
+    left: 5px;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    transition: left 0.3s ease;
+  }
+  
+  .yes-button.hovered .circle {
+    left: calc(90% - 90px); /* Move to right on hover */
+  }
+  
+  .yes-text {
+    position: absolute;
+    right: 30px; /* Position text on the right side initially */
+    font-size: 7rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+    transition: right 0.3s ease, left 0.3s ease; /* Add transition for both right and left */
+  }
+  
+  .yes-button.hovered .yes-text {
+    right: auto; /* Remove right positioning */
+    left: 30px; /* Move to left on hover */
+    color: white;
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #121212;
+    padding: 60px 0 30px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  
+  .footer-column {
+    margin-bottom: 30px;
+  }
+  
+  .footer-main-links {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-services {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-contact {
+    flex: 1;
+    min-width: 200px;
+    text-align: right;
+  }
+  
+  .footer-main-links li,
+  .footer-services li {
+    margin-bottom: 15px;
+  }
+  
+  .footer-main-links a {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .footer-services a {
+    font-size: 1.2rem;
+    color: #999;
+  }
+  
+  .footer-services a:hover {
+    color: #ffffff;
+  }
+  
+  .location h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .location p {
+    color: #999;
+    margin-bottom: 5px;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer-policies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-policies a,
+  .copyright {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .footer-policies a:hover {
+    color: #ffffff;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #cccccc;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .work-with-us-title {
+      font-size: 3rem;
+    }
+  
+    .footer-contact {
+      text-align: left;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      margin-left: 66px;
+    }
+  
+    .footer-column {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .footer-contact {
+      text-align: left;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .footer-policies {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    .footer-social {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .work-with-us-title {
+      font-size: 2.5rem;
+    }
+  
+    .yes-button {
+      width: 150px;
+      height: 60px;
+    }
+  
+    .circle {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .yes-button.hovered .circle {
+      left: calc(100% - 55px);
+    }
+  
+    .yes-text {
+      font-size: 2rem;
+      right: 20px;
+    }
+  
+    .yes-button.hovered .yes-text {
+      left: 20px;
+    }
+  }
+  
+  

@@ -1,0 +1,270 @@
+/* Base styles */
+.partner-section {
+    position: relative;
+    width: 94%;
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 4rem 2rem;
+    /* font-family: 'Gilroy', sans-serif; "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; */
+    overflow: hidden;
+  }
+  
+  .partner-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .partner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  /* Heading styles */
+  .partner-heading {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .partner-heading h2 {
+    font-size: clamp(7rem, 7vw, 5rem);
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 2rem;
+    color: #000;
+  }
+  
+  .partner-button {
+    display: inline-block;
+    background-color: #e6d9c2;
+    color: #000;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .partner-button:hover {
+    background-color: #d6c9b2;
+  }
+  
+  /* Cards styles */
+  .partner-cards {
+    flex: 1;
+    position: relative;
+    height: 700px;
+    max-width: 600px;
+  }
+  
+  .partner-card {
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0;
+    transform: translateY(50px);
+    height: 250px;
+  }
+  
+  .card-revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .partner-card:hover {
+    transform: translateY(-50px);
+  }
+  
+  .card-1 {
+    top: 130px;
+    right: 50px;
+    z-index: 1;
+    background-color: #ffc107;
+  }
+  
+  .card-2 {
+    top: 210px;
+    right: 50px;
+    z-index: 2;
+    background-color: #0d3b66;
+  }
+  
+  .card-3 {
+    top: 300px;
+    right: 50px;
+    z-index: 3;
+    background-color: #ff7b00;
+  }
+  
+  .card-image {
+    width: 56%;
+    height: 97%;
+    overflow: hidden;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  
+  /* .card-info {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #000;
+  }
+  
+  .card-1 .card-title {
+    color: #000;
+  }
+  
+  .card-2 .card-title {
+    color: #fff;
+  }
+  
+  .card-3 .card-title,
+  .card-3 .card-subtitle {
+    color: #0066cc;
+  }
+  
+  .card-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+  
+  .card-subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .shopify-badge {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    bottom: 15px;
+    right: 60px;
+    position: absolute;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1200px) {
+    .partner-card {
+      max-width: 400px;
+    }
+  
+    .card-2 {
+      right: 50px;
+    }
+  
+    .card-3 {
+      right: 50px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .partner-content {
+      flex-direction: column;
+    }
+  
+    .partner-heading {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .partner-cards {
+      width: 100%;
+      max-width: 100%;
+      height: 700px;
+    }
+  
+    .partner-card {
+      max-width: 350px;
+      left: 50%;
+      transform: translateX(-50%) translateY(50px);
+    }
+  
+    .card-revealed {
+      transform: translateX(-50%) translateY(0);
+    }
+  
+    .partner-card:hover {
+      transform: translateX(-50%) translateY(-30px);
+    }
+  
+    .card-1 {
+      top: 0;
+      right: auto;
+    }
+  
+    .card-2 {
+      top: 220px;
+      right: auto;
+    }
+  
+    .card-3 {
+      top: 440px;
+      right: auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .partner-section {
+      padding: 2rem 1rem;
+      width: 89%;
+    }
+  
+    .partner-heading h2 {
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+    }
+  
+    .partner-cards {
+      height: 600px;
+    }
+  
+    .partner-card {
+      max-width: 280px;
+    }
+  
+    .card-2 {
+      top: 180px;
+    }
+  
+    .card-3 {
+      top: 360px;
+    }
+  
+    .card-title {
+      font-size: 1.25rem;
+    }
+  
+    .card-subtitle {
+      font-size: 1rem;
+    }
+  }
+  
+  

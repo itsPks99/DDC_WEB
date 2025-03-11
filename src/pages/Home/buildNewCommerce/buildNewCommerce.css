@@ -1,0 +1,249 @@
+/* Base styles */
+.build-commerce-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e6d9c2;
+    overflow: hidden;
+    /* padding: 2rem 2rem; */
+    padding-bottom: 50px;
+    /* font-family: 'Gilroy', sans-serif; "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; */
+  }
+ 
+  .commerce-container {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Headline styles */
+  .headline-container {
+    position: relative;
+    z-index: 1;
+    margin: 4rem 0;
+    transition: transform 0.2s ease-out;
+  }
+  
+  .headline {
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .headline-dark {
+    color: #000;
+  }
+  
+  .headline-light {
+    color: #fff;
+  }
+  
+  /* Card styles */
+  .stats-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .stat-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .conversion-card {
+    margin-left: 2rem;
+  }
+  
+  .brands-card {
+    margin-right: 2rem;
+    margin-left: auto;
+  }
+  
+  .card-label {
+    font-size: 1rem;
+    color: #333;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .card-value {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0 0 1rem 0;
+  }
+  
+  /* Chart in conversion card */
+  .chart {
+    display: flex;
+    align-items: flex-end;
+    height: 60px;
+    gap: 8px;
+  }
+  
+  .bar {
+    flex: 1;
+    background-color: #e6d9c2;
+    border-radius: 4px;
+  }
+  
+  .bar-1 {
+    height: 30%;
+  }
+  
+  .bar-2 {
+    height: 50%;
+  }
+  
+  .bar-3 {
+    height: 40%;
+  }
+  
+  .bar-4 {
+    height: 80%;
+    background-color: #c4ad7c;
+  }
+  
+  .arrow-up {
+    font-size: 1.5rem;
+    text-align: right;
+    color: #000;
+  }
+  
+  /* Info cards */
+  .info-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .info-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .person-card {
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    background-image: url("/placeholder.svg?height=350&width=400");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+  }
+  
+  .card-subtitle {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0 0;
+  }
+  
+  .brand-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 1.5rem;
+    margin-left: auto;
+  }
+  
+  .product-image {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .podcast-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+  
+  .arrow {
+    font-size: 1.5rem;
+  }
+  
+ 
+  /* Responsive styles */
+  @media (max-width: 1200px) {
+    .stats-cards,
+    .info-cards {
+      justify-content: center;
+    }
+  
+    .conversion-card,
+    .brands-card {
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .build-commerce-section {
+      padding: 1rem;
+    }
+  
+    .headline {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+    }
+  
+    .stat-card {
+      max-width: 100%;
+    }
+  
+    .person-card,
+    .brand-card {
+      max-width: 100%;
+    }
+    .build-commerce-section{
+      width: 94%;
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+    .headline-container {
+      margin: 2rem 0;
+    }
+
+    .build-commerce-section{
+      width: 94%;
+    }
+  
+    .card-value {
+      font-size: 2.5rem;
+    }
+  
+    .card-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  

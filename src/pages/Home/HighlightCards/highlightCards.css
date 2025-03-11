@@ -1,0 +1,198 @@
+.highlight-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gilroy', sans-serif; 
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 150px;
+}
+
+.highlight-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #000;
+}
+
+.highlight-button {
+  background-color: #f3f4f6;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.highlight-button:hover {
+  background-color: #e5e7eb;
+}
+
+.highlightCards-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.highlightCard {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.highlightCard-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  z-index: 2;
+}
+
+.highlighthighlightCard-image-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px;
+}
+
+.highlighthighlightCard-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Initial stacked state */
+.highlightCards-container:not(.expanded) .highlightCard {
+  transform-origin: center center;
+}
+
+/* Expanded state with highlightCards spread out */
+.highlightCards-container.expanded .highlightCard {
+  transform-origin: center center;
+}
+
+/* Hover effects only when expanded */
+.highlightCards-container.expanded .highlightCard:hover {
+  transform: scale(1.1) !important;
+  z-index: 100 !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Preserve the highlightCard's position on hover */
+.highlightCards-container.expanded .highlightCard:hover {
+  transform: translate(var(--x), var(--y)) scale(1.1) !important;
+}
+
+/* Set custom properties for each highlightCard's position */
+.highlightCards-container.expanded .highlightCard {
+  --x: attr(data-position-x px);
+  --y: attr(data-position-y px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .highlightCards-container {
+    height: 600px;
+  }
+  
+  .highlightCard {
+    width: 250px;
+    height: 350px;
+  }
+  
+  .highlight-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .highlightCards-container {
+    height: 500px;
+  }
+  
+  .highlightCard {
+    width: 200px;
+    height: 280px;
+  }
+  
+  .highlight-title {
+    font-size: 2rem;
+  }
+}
+
+/* Fix for mobile devices to maintain the expanded layout */
+@media (max-width: 640px) {
+  .highlightCards-container.expanded {
+    height: 400px;
+  }
+  
+  .highlightCards-container.expanded .highlightCard {
+    transform: scale(0.7) !important;
+  }
+  
+  .highlightCards-container.expanded .highlightCard:nth-child(1) {
+    transform: translate(150px, -30px) scale(0.7) !important;
+  }
+  
+  .highlightCards-container.expanded .highlightCard:nth-child(2) {
+    transform: translate(100px, 100px) scale(0.7) !important;
+  }
+  
+  .highlightCards-container.expanded .highlightCard:nth-child(3) {
+    transform: translate(0px, -10px) scale(0.7) !important;
+  }
+  
+  .highlightCards-container.expanded .highlightCard:nth-child(4) {
+    transform: translate(-100px, 100px) scale(0.7) !important;
+  }
+  
+  .highlightCards-container.expanded .highlightCard:nth-child(5) {
+    transform: translate(-150px, -30px) scale(0.7) !important;
+  }
+  
+  .highlightCards-container.expanded .highlightCard:hover {
+    transform: scale(0.8) !important;
+  }
+  
+  .highlightCards-container.expanded .highlightCard:nth-child(1):hover {
+    transform: translate(150px, -30px) scale(0.8) !important;
+  }
+  
+  .highlightCards-container.expanded .highlightCard:nth-child(2):hover {
+    transform: translate(100px, 100px) scale(0.8) !important;
+  }
+  
+  .highlightCards-container.expanded .highlightCard:nth-child(3):hover {
+    transform: translate(0px, -10px) scale(0.8) !important;
+  }
+  
+  .highlightCards-container.expanded .highlightCard:nth-child(4):hover {
+    transform: translate(-100px, 100px) scale(0.8) !important;
+  }
+  
+  .highlightCards-container.expanded .highlightCard:nth-child(5):hover {
+    transform: translate(-150px, -30px) scale(0.8) !important;
+  }
+}

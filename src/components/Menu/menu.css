@@ -1,0 +1,146 @@
+
+.menu-container {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  /* font-family: 'Gilroy', sans-serif; */
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  border-radius: 999px;
+  padding: 0.75rem 3rem;
+  background-color: #e31e24;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  width: 250px;
+  height: 80px;
+  opacity: 1;
+  visibility: visible;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border: none; 
+}
+
+.menu-button-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.menu-button:hover {
+  padding: 0.75rem 3rem;
+}
+
+.menu-button:hover .menu-text {
+  display: none;
+}
+
+/* White Circular Icon Container */
+.menu-icon-circle {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Move the circle to the center on hover */
+.menu-button:hover .menu-icon-circle {
+  transform: translateX(80px) rotate(90deg);
+}
+
+.menu-icon-hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-icon-hamburger .line {
+  width: 30px;
+  height: 5px;
+  background: #e31e24;
+  border-radius: 2px;
+}
+
+/* Remove the third line to only show two */
+.menu-icon-hamburger .line:nth-child(3) {
+  display: none;
+}
+
+.menu-text {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+  margin-left: 50px;
+  transition: opacity 1s ease-in-out;
+}
+
+.menu-panel {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  border-radius: 3rem;
+  padding: 1.5rem;
+  background-color: #e31e24;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-open {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+.menu-closed {
+  opacity: 0;
+  transform: translateX(-50%) translateY(1rem);
+  pointer-events: none;
+}
+
+.menu-item {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.menu-item:hover {
+  background-color: white;
+  color: #e31e24;
+  border-radius: 999px;
+  padding: 0.75rem 2rem;
+  transform: scale(1.05);
+  
+}
+
+/* Special styling for the highlighted "Expertise" item */
+/* .menu-item-highlighted {
+  background-color: white;
+  color: #e31e24;
+  border-radius: 2rem;
+  padding: 0.75rem 1.5rem;
+} */
+

@@ -1,0 +1,79 @@
+/* @font-face {
+    font-family: 'Gilroy';
+    src: url('/src/assets/fonts/Gilroy-Light.woff2') format('woff2'),
+         url('/src/assets/fonts/Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/src/assets/fonts/Gilroy-Regular.woff2') format('woff2'),
+         url('/src/assets/fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/src/assets/fonts/Gilroy-Medium.woff2') format('woff2'),
+         url('/src/assets/fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/src/assets/fonts/Gilroy-Bold.woff2') format('woff2'),
+         url('/src/assets/fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/src/assets/fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+         url('/src/assets/fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/src/assets/fonts/Gilroy-Heavy.woff2') format('woff2'),
+         url('/src/assets/fonts/Gilroy-Heavy.woff') format('woff');
+    font-weight: 900;
+} */
+
+/* Apply Gilroy to the whole website */
+.body {
+    font-family: 'Gilroy' !important; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Font weight classes for reference */
+.gilroy-light {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 300;
+}
+
+.gilroy-regular {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+}
+
+.gilroy-medium {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+}
+
+.gilroy-bold {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+}
+
+.gilroy-extrabold {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+}
+
+.gilroy-heavy {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 900;
+}
