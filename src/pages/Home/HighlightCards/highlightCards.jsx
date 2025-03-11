@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './HighlightCards.css';
+import './highlightCards.css';
 
 const HighlighthighlightCards = () => {
   const [isExpanded, setIsExpanded] = useState(false);
