@@ -1,8 +1,42 @@
-# React + Vite
+# Agency Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive agency website built with React, Vite, and vanilla CSS.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow these steps to set up the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/yourproject.git
+
+# Navigate to the project directory
+cd yourproject
+
+# Install dependencies
+npm install
+```
+
+## Usage
+
+To start the development server and view the website locally:
+
+```bash
+# Start the project
+npm start
+```
+
+## Contributing
+
+We welcome contributions! Please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add new feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.

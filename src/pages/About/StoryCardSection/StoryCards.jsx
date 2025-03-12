@@ -1,4 +1,3 @@
-import '@/index.css';
 import React, { useEffect, useRef, useState } from "react";
 import ImageZoomSection from "../ImageZoomSection/imageZoomSection";
 import "./StoryCards.css";

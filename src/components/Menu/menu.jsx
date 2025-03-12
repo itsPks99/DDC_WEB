@@ -1,4 +1,3 @@
-import "@/index.css";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import "./menu.css";

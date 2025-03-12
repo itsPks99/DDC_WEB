@@ -1,4 +1,3 @@
-import '@/index.css';
 import React, { useEffect, useRef } from 'react';
 import './AboutImagesMoves.css';
 

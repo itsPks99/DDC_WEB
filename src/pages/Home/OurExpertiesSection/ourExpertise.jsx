@@ -1,4 +1,3 @@
-import '@/index.css';
 import React, { useEffect, useState } from 'react';
 import './ourExpertise.css';
 

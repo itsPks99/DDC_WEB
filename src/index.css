@@ -1,36 +1,53 @@
-
-.body {
-    font-family: 'Gilroy', sans-serif; 
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('/public/fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
 }
 
-.gilroy-light {
-    font-family: 'Gilroy', sans-serif;
+@font-face {
+    font-family: 'Gilroy-Heavy';
+    src: url('/public/fonts/Gilroy-Heavy.woff') format('woff');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('/public/fonts/Gilroy-Light.woff') format('woff');
     font-weight: 300;
 }
 
-.gilroy-regular {
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 400;
-}
-
-.gilroy-medium {
-    font-family: 'Gilroy', sans-serif;
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('/public/fonts/Gilroy-Medium.woff') format('woff');
     font-weight: 500;
 }
 
-.gilroy-bold {
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 700;
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('/public/fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
 }
 
-.gilroy-extrabold {
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 800;
+/* Apply Default Font to Body */
+body {
+    font-family: 'Gilroy-Regular', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.gilroy-heavy {
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 900;
+h1 {
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+h2 {
+    font-family: 'Gilroy-Heavy', sans-serif;
+}
+
+p {
+    font-family: 'Gilroy-Light', sans-serif;
+}
+
+button {
+    font-family: 'Gilroy-Medium', sans-serif;
 }

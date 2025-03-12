@@ -1,4 +1,3 @@
-import '@/index.css';
 import { motion, useAnimation } from 'framer-motion';
 import { ArrowLeft, Check, Plus } from 'lucide-react';
 import React, { useEffect, useState } from 'react';

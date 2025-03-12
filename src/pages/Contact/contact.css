@@ -262,6 +262,8 @@ select {
     text-align: left;
   }
 
+ 
+
 
   input {
   width: 87%;
@@ -276,7 +278,7 @@ select {
     position: relative;
     display: inline-flex;
     align-items: center;
-    background-color: #0d0c0c; /* Red background */
+    background-color: #0d0c0c; 
     border-radius: 100px;
     padding: 7px;
     width: 330px;
@@ -286,9 +288,12 @@ select {
     margin: 0 auto;
   }
   
-  /* .contactCircle-button.hovered {
-    background-color: #00c853; 
-  } */
+  @media (max-width: 768px)  {
+    .contactCircle-button{
+      display: none;
+    }
+    
+  }
   
   .circle {
     position: absolute;
@@ -301,20 +306,20 @@ select {
   }
   
   .contactCircle-button.hovered .circle {
-    left: calc(90% - 90px); /* Move to right on hover */
+    left: calc(90% - 90px); 
   }
   
-  .yes-text {
+  /* .yes-text {
     position: absolute;
-    right: 30px; /* Position text on the right side initially */
+    right: 30px; 
     font-size: 7rem;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.7);
-    transition: right 0.3s ease, left 0.3s ease; /* Add transition for both right and left */
-  }
+    transition: right 0.3s ease, left 0.3s ease; 
+  } */
   
   .contactCircle-button.hovered .yes-text {
-    right: auto; /* Remove right positioning */
-    left: 30px; /* Move to left on hover */
+    right: auto; 
+    left: 30px; 
     color: white;
   }

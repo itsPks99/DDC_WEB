@@ -1,4 +1,3 @@
-import '@/index.css';
 import { useEffect, useRef } from "react";
 import "./buildNewCommerce.css";
 
