@@ -1,13 +1,13 @@
 .imageZoomWrapper {
-    position: relative;
+    position: sticky;
     width: 100%;
-    height: 200vh; /* Enough scroll space for effect */
+    height: 100vh; /* Enough scroll space for effect */
     background-color: #e10600;
 }
 
 .imageZoomSection {
-    position: sticky;
-    top: 0;
+    position: absolute;
+    top: 0px;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -19,6 +19,8 @@
 }
 
 .zoomImage {
+    position: sticky;
+    top: 0;
     width: 80%;
     height: auto;
     max-height: 80vh;

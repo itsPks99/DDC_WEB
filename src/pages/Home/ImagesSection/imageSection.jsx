@@ -1,3 +1,4 @@
+import '@/index.css';
 import React, { useEffect, useRef } from 'react';
 import './imageSection.css';
 

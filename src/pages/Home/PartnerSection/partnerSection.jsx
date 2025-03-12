@@ -1,5 +1,6 @@
-import { useEffect, useRef } from "react"
-import "./partnerSection.css"
+import '@/index.css';
+import { useEffect, useRef } from "react";
+import "./partnerSection.css";
 
 const PartnerSection = () => {
   const card1Ref = useRef(null)

@@ -1,0 +1,56 @@
+.arrowhover {
+    position: relative;
+    width:  200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  
+  .icon-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    color: black;
+  }
+  
+  .arrow-icon,
+  .new-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .new-icon {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  
+  .arrowhover:hover .arrow-icon {
+    transform: translate(200%, -100%);
+  }
+  
+  .arrowhover:hover .new-icon {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: none;
+  }
+  /* For accessibility - focus state */
+  /* .arrowhover:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(238, 0, 0, 0.3);
+  } */
+  
+  

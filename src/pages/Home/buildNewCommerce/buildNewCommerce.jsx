@@ -1,5 +1,6 @@
-import { useEffect, useRef } from "react"
-import "./buildNewCommerce.css"
+import '@/index.css';
+import { useEffect, useRef } from "react";
+import "./buildNewCommerce.css";
 
 const BuildNewCommerce = () => {
   const sectionRef = useRef(null)

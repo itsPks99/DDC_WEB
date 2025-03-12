@@ -1,6 +1,6 @@
-import { ArrowRight } from "lucide-react"
-import { ParallaxProvider, useParallax } from "react-scroll-parallax"
-import "./hiringSection.css"
+import { ArrowRight } from "lucide-react";
+import { ParallaxProvider, useParallax } from "react-scroll-parallax";
+import "./hiringSection.css";
 
 const JobButton = ({ children, className, startPosition, direction }) => {
   // Only apply horizontal movement with no vertical change

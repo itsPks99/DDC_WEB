@@ -1,6 +1,8 @@
+import '@/index.css';
 import { motion, useAnimation } from 'framer-motion';
-import { ArrowLeft, ArrowUpRight, Check, Plus } from 'lucide-react';
+import { ArrowLeft, Check, Plus } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
+import ArrowButton from '../../components/ArrowHover/arrowhover';
 import './contact.css';
 
 const Contact = () => {
@@ -90,7 +92,7 @@ const Contact = () => {
   };
 
   const handleCopyEmail = async () => {
-    await navigator.clipboard.writeText('sales@askphill.com');
+    await navigator.clipboard.writeText('sales@askddc.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -119,7 +121,7 @@ const Contact = () => {
   if (currentView === 'email') {
     return (
       <div className="contact-container">
-        <div className="logo">ASK PHILL</div>
+        <div className="logo">ASK Fill Free To Delhi Digital Co.  </div>
         <motion.div 
           className="content-wrapper"
           initial={{ y: -50, opacity: 0 }}
@@ -148,7 +150,7 @@ const Contact = () => {
   if (currentView === 'project') {
     return (
       <div className="contact-container">
-        <div className="logo">ASK PHILL</div>
+        <div className="logo">ASK Fill Free To Delhi Digital Co.</div>
         <motion.div 
           className="content-wrapper"
           initial={{ y: -50, opacity: 0 }}
@@ -241,7 +243,7 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      <div className="logo">ASK PHILL</div>
+      <div className="logo">ASK Fill Free To Delhi Digital Co.</div>
       <div className="main-content">
         <motion.h1 
           className="title"
@@ -275,6 +277,8 @@ const Contact = () => {
               </motion.div>
             )}
           </motion.div>
+
+         
           <motion.div 
             className="contact-card call-card"
             style={{ right: positions.callCard?.right, top: positions.callCard?.top }}
@@ -297,16 +301,14 @@ const Contact = () => {
             Join the team
           </motion.div>
 
-          <motion.div>
           <div
-            className={`contactbtnhover ${isHovered ? "hovered" : ""}`}
+            className={`contactCircle-button ${isHovered ? "hovered" : ""}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
             <div className="circle"></div>
             {/* <span className="yes-text">Yes</span> */}
           </div>
-          </motion.div>
           <motion.div 
             className="action-card inquiry-card gilroy-heavy" 
             onClick={handleSubmitInquiry}
@@ -318,16 +320,11 @@ const Contact = () => {
           >
             Submit your inquiry
           </motion.div>
-          <motion.div 
-            className="circle-icon arrow-icon"
-            style={{ left: positions.arrowIcon?.left, top: positions.arrowIcon?.top }}
-            variants={dropVariants}
-            initial="initial"
-            animate="animate"
-            custom={4}
-          >
-            <ArrowUpRight size={32} />
+
+          <motion.div className='arrowhover' style={{width:"60px", height:"60px"}}>
+           <ArrowButton/>
           </motion.div>
+          
           <motion.div 
             className="circle-icon plus-icon"
             style={{ right: positions.plusIcon?.right, bottom: positions.plusIcon?.bottom }}

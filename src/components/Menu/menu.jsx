@@ -55,7 +55,7 @@ export default function Menu({ pageColor = "#E31E24" }) {
         {[
           { name: "Expertise", path: "/expertise" },
           { name: "Blog", path: "/blog" },
-          { name: "Our Work", path: "/our-work" },
+          { name: "OurWork", path: "/our-work" },
           { name: "Contact", path: "/contact" },
           { name: "About", path: "/about" },
           { name: "Home", path: "/" }

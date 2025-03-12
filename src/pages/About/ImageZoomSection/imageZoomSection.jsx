@@ -16,8 +16,8 @@ const ImageZoom = () => {
       const scrollPosition = Math.max(0, scrollY - sectionTop);
 
       const maxScale = 1.2; // Maximum zoom-in level
-      const minScale = 1; // Starting scale
-      const zoomFactor = 1 + (scrollPosition / sectionHeight) * 0.5; // Adjust zoom speed
+      const minScale = 0; // Starting scale
+      const zoomFactor = 1+ (scrollPosition / sectionHeight) * 0.2; // Adjust zoom speed
 
       let newScale = Math.min(Math.max(zoomFactor, minScale), maxScale);
       setScale(newScale);
