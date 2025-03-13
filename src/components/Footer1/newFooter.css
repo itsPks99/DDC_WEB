@@ -1,0 +1,218 @@
+@import url(/src/index.css);
+
+.newfooter-container {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0;
+    width: 100%;
+    font-family: 'Gilroy-Regular', sans-serif;
+    position: relative;
+    overflow: hidden;
+    z-index: 200;
+}
+
+.newfooter-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 1rem;
+}
+
+.newfooter-title-container {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.newfooter-title {
+    font-size: 9.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 1.2;
+    transform: translateY(9%);
+    text-align: center;
+    animation: slideUp 1s ease-out forwards;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(180deg, #ffffff 60%, rgba(255, 255, 255, 0.8) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(9%);
+    }
+}
+
+.newfooter-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.newfooter-nav {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.newfooter-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.2s ease;
+}
+
+.newfooter-link:hover {
+    opacity: 0.8;
+}
+
+.newfooter-social-left,
+.newfooter-social-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.newfooter-social-icon {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.newfooter-social-icon:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+.newfooter-copyright {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .newfooter-container {
+        padding: 1rem 0;
+    }
+
+    .newfooter-content {
+        padding: 1rem;
+    }
+
+    .newfooter-title-container {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .newfooter-title {
+        font-size: 3.5rem;
+        transform: translateY(0);
+        animation: mobileSlideUp 1s ease-out forwards;
+    }
+
+    @keyframes mobileSlideUp {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    .newfooter-nav-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .newfooter-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    .newfooter-link {
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+
+    .newfooter-social-left,
+    .newfooter-social-right {
+        display: none;
+    }
+
+    .newfooter-copyright {
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+    }
+    .work-with-us-title{
+        font: 2em sans-serif;
+    }
+}
+
+/* Additional mobile optimization */
+@media (max-width: 480px) {
+    .newfooter-nav {
+        gap: 0.5rem;
+    }
+
+    .newfooter-link {
+        font-size: 0.7rem;
+    }
+
+    .newfooter-title {
+        font-size: 3rem;
+    }
+    .work-with-us-title{
+        font: 1em sans-serif;
+    }
+}
+
+
+
+
+
+
+
+/* Work With Us Section */
+.work-with-us {
+    background-color: #e5ddd3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    border-radius: 15rem;
+    margin: 30px;
+  }
+  
+  .work-with-us-title {
+    font-size: 7rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    /* line-height: 1.2; */
+  }
+  
+  .work-with-us-title br {
+    display: block;
+  }
+  

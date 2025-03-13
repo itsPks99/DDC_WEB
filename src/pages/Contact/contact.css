@@ -295,7 +295,7 @@ select {
     
   }
   
-  .circle {
+  .contactCircle {
     position: absolute;
     left: 5px;
     width: 120px;
@@ -305,7 +305,7 @@ select {
     transition: left 0.3s ease;
   }
   
-  .contactCircle-button.hovered .circle {
+  .contactCircle-button.hovered .contactCircle {
     left: calc(90% - 90px); 
   }
   

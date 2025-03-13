@@ -1,30 +1,30 @@
 @font-face {
     font-family: 'Gilroy-Bold';
-    src: url('/public/fonts/Gilroy-Bold.woff') format('woff');
+    src: url('/fonts/Gilroy-Bold.woff') format('woff');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Gilroy-Heavy';
-    src: url('/public/fonts/Gilroy-Heavy.woff') format('woff');
+    src: url('/fonts/Gilroy-Heavy.woff') format('woff');
     font-weight: 900;
 }
 
 @font-face {
     font-family: 'Gilroy-Light';
-    src: url('/public/fonts/Gilroy-Light.woff') format('woff');
+    src: url('/fonts/Gilroy-Light.woff') format('woff');
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'Gilroy-Medium';
-    src: url('/public/fonts/Gilroy-Medium.woff') format('woff');
+    src: url('/fonts/Gilroy-Medium.woff') format('woff');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Gilroy-Regular';
-    src: url('/public/fonts/Gilroy-Regular.woff') format('woff');
+    src: url('/fonts/Gilroy-Regular.woff') format('woff');
     font-weight: normal;
 }
 

@@ -305,7 +305,7 @@ const Contact = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <div className="circle"></div>
+            <div className="contactCircle"></div>
             {/* <span className="yes-text">Yes</span> */}
           </div>
           <motion.div 
