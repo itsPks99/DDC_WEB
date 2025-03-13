@@ -54,7 +54,7 @@
 .contact-card, .action-card, .circle-icon {
   position: absolute;
   border-radius: 100px;
-  padding: 1.5rem 2.5rem;
+  padding: 0.6rem 2.5rem;
   background: #fff;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -238,7 +238,11 @@ select {
   }
 
   .contact-card span {
-    font-size: 2rem;
+    font-size: 1rem;
+  }
+
+  .arrorhover {
+    display: none;
   }
 
   .contact-card,

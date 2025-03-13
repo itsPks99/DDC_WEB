@@ -1,0 +1,179 @@
+@import url(/src/index.css);
+
+/* Main Container */
+.connect-with-us-container {
+  width: 100%;
+}
+  
+/* CTA Section */
+.cta-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  
+.cta-heading {
+  color: #3a2a4d;
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+  
+/* Connect Button with WhatsApp */
+.connect-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3a2a4d;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+  
+.connect-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #9c5dc0;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+  
+.connect-button:hover::before {
+  left: 0;
+}
+  
+.whatsapp-icon {
+  display: inline-flex;
+  margin-right: 10px;
+  color: white;
+}
+  
+/* Contact Form Section */
+.contact-form-section {
+  background-color: #3a2a4d;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.form-heading {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 500;
+}
+  
+.contact-form {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+  
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+  
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  border: 1px solid white;
+  color: black;
+  padding: 15px;
+  width: 100%; 
+  border-radius: 30px;
+  font-size: 22px;
+  box-sizing: border-box;
+}
+  
+.contact-form input::placeholder,
+.contact-form select::placeholder,
+.contact-form textarea::placeholder {
+  color: black;
+}
+  
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+  
+/* Submit Button with Slide Effect */
+.submit-button {
+  background-color: white;
+  color: #3a2a4d;
+  border: none;
+  padding: 12px 40px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+  
+.submit-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #9c5dc0;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+  
+.submit-button:hover {
+  color: white;
+}
+  
+.submit-button:hover::before {
+  left: 0;
+}
+  
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+  
+@media (max-width: 576px) {
+  .cta-heading {
+    font-size: 24px;
+  }
+  
+  .form-heading {
+    font-size: 22px;
+  }
+  
+  .connect-button, 
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

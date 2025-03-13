@@ -6,7 +6,7 @@ const NewFooter = () => {
   return (
     <footer className="newfooter-container">
 
-      <section className="work-with-us">
+      {/* <section className="work-with-us">
         <div className="container">
           <h2 className="work-with-us-title" style={{ color: "white" }}>
             Are you ready to
@@ -14,7 +14,7 @@ const NewFooter = () => {
             <span style={{ color: "#a1a1a1" }}>work with us?</span>
           </h2>
         </div>
-      </section>
+      </section> */}
 
 
       <div className="newfooter-content">

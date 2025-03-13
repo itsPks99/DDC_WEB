@@ -320,7 +320,7 @@ const Contact = () => {
             Submit your inquiry
           </motion.div>
 
-          <motion.div className='arrowhover' style={{width:"60px", height:"60px"}}>
+          <motion.div className='arrowhover arrorhover' style={{width:"60px", height:"60px"}}>
            <ArrowButton/>
           </motion.div>
           

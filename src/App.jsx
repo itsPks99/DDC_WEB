@@ -4,6 +4,7 @@ import Menu from './components/Menu/menu';
 import About from "./pages/About/about";
 import Home from "./pages/Home/home";
 import NewFooter from "./components/Footer1/newFooter";
+import ConnectWithUs from "./pages/Contact/connectWithUs/connectwithUs";
 // import Blog from "./pages/Blog";
 import Contact from "./pages/Contact/contact";
 // import Expertise from "./pages/Expertise";
@@ -21,6 +22,7 @@ function App() {
         <Route path="/our-work" element={<OurWork />} /> */}
       </Routes>
       {/* <Footer /> */}
+      <ConnectWithUs/>  
       <NewFooter/>
     </Router>
   );
