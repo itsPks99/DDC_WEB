@@ -60,7 +60,7 @@
     flex-direction: column;
     gap: 6rem;
     margin-top: 6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
   }
   
   .job-row {
@@ -127,6 +127,10 @@
       }
       .row-3{
         margin-left: 90px;
+      }
+
+      .jobs-container {
+        margin-bottom: 2rem;
       }
 
     .job-button {

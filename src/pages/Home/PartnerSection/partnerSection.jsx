@@ -29,13 +29,13 @@ const PartnerSection = () => {
     <section className="partner-section">
       <div className="partner-container">
         <div className="partner-content">
-          <div className="partner-heading gilroy-heavy">
+          <div className="partner-heading gilroy-bold">
             <h2>
-              Partner       
+              Partnership    
               <br />
-              insuccess
+              That Driven 
               <br />
-              stories
+              Growth
             </h2>
             <a href="#" className="partner-button">
               See our work

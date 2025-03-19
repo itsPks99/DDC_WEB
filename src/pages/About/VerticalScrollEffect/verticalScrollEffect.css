@@ -1,4 +1,4 @@
-@import url(/src/index.css);
+/* @import url(/src/index.css); */
 
 .VerticalScrollEffectSection {
   position: relative;
@@ -11,7 +11,7 @@
 }
 
 .VerticalScrollEffectTitleContainer {
-  padding: 4rem 2rem 2rem;
+  /* padding: 4rem 2rem 2rem; */
   text-align: center;
 }
 
@@ -51,7 +51,7 @@
 .VerticalScrollEffectCard {
   flex: 0 0 auto;
   width: 350px;
-  height: 500px;
+  height: 430px;
   margin-right: 2rem;
   border-radius: 12px;
   overflow: hidden;
@@ -133,11 +133,21 @@
     width: 300px;
     height: 450px;
   }
+  .VerticalScrollEffectSection {
+   
+    height: 66vh;
+   
+  }
 }
 
 @media (max-width: 480px) {
   .VerticalScrollEffectTitle {
     font-size: 2rem;
+  }
+  .VerticalScrollEffectSection {
+   
+    height: 66vh;
+   
   }
   
   .VerticalScrollEffectCard {

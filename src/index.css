@@ -37,15 +37,27 @@ body {
 }
 
 h1 {
+    /* font-size: ; */
     font-family: 'Gilroy-Bold', sans-serif;
 }
 
 h2 {
     font-family: 'Gilroy-Heavy', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-weight: 700;
 }
 
 p {
     font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 600;
+}
+
+span {
+    font-family: 'Gilroy-Bold', sans-serif;
 }
 
 button {

@@ -50,7 +50,7 @@ const BuildNewCommerce = () => {
         <div className="stats-cards">
           <div className="stat-card conversion-card" ref={leftCardRef}>
             <div className="card-content">
-              <p className="gilroy-heavy ">Conversion rate increase</p>
+              <p className="Gilroy-Light">Conversion Boost</p>
               <h3 className="card-value">+12%</h3>
               <div className="chart">
                 <div className="bar bar-1"></div>
@@ -63,7 +63,7 @@ const BuildNewCommerce = () => {
 
           <div className="stat-card brands-card" ref={rightCardRef}>
             <div className="card-content">
-              <p className="card-label">Brands moved to Shopify</p>
+              <p className="Gilroy-Light"> Brands Scaled</p>
               <h3 className="card-value">150+</h3>
               <div className="arrow-up">↑</div>
             </div>
@@ -72,34 +72,34 @@ const BuildNewCommerce = () => {
 
         <div className="headline-container" ref={textRef}>
           <h1 className="headline gilroy-heavy">
-            <span className="headline-dark">We build </span>
-            <span className="headline-light">the next</span>
+            <span className="headline-dark">Trasforming   </span>
+            <span className="headline-light">Clicks Into</span>
             <br />
-            <span className="headline-dark">in commerce.</span>
+            <span className="headline-dark">Customer.</span>
           </h1>
         </div>
 
         <div className="info-cards">
           <div className="info-card person-card" ref={personImageRef}>
             <div className="card-content">
-              <p className="card-subtitle">Beyond Headless</p>
+              {/* <p className="card-subtitle">Beyond Headless</p> */}
               <h3 className="card-title">
-                Shopify
+                Performance-Driven 
                 <br />
-                Simplified
+                Paid Ads
               </h3>
             </div>
           </div>
 
           <div className="info-card brand-card" ref={brandCardRef}>
             <div className="card-content">
-              <h3 className="card-title">Brand stories</h3>
+              <h3 className="card-title">Branding & Social Media Excellence</h3>
               <div className="product-image">
                 <img src="/placeholder.svg?height=150&width=250" alt="Product" />
               </div>
               <div className="podcast-link">
-                <p>Listen to our podcast</p>
-                <span className="arrow">→</span>
+                {/* <p>Listen to our podcast</p>
+                <span className="arrow">→</span> */}
               </div>
             </div>
           </div>

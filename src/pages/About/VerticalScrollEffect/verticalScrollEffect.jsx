@@ -89,7 +89,7 @@ const VerticalScrollEffect = () => {
           </div>
           <div className="VerticalScrollEffectCardContent">
             <h3>Today</h3>
-            <p>Now, we're a team of over 100 professionals dedicated to creating innovative solutions that make a difference.</p>
+            <p>Now, we're a team of over 100 professionals dedicated to creating innovative solutions  </p>
           </div>
         </div>
       </div>

@@ -4,10 +4,10 @@
 .partner-section {
     position: relative;
     width: 94%;
-    min-height: 100vh;
+    min-height: 180vh;
     background-color: #fff;
     padding: 4rem 2rem;
-    /* font-family: 'Gilroy', sans-serif; "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; */
+    font-family: 'Gilroy', sans-serif;
     overflow: hidden;
   }
   
@@ -31,7 +31,7 @@
   }
   
   .partner-heading h2 {
-    font-size: clamp(7rem, 7vw, 5rem);
+    font-size: clamp(5rem, 7vw, 5rem);
     font-weight: 900;
     line-height: 1;
     margin-bottom: 2rem;
@@ -238,6 +238,7 @@
     .partner-section {
       padding: 2rem 1rem;
       width: 89%;
+      height: 176vh;
     }
   
     .partner-heading h2 {

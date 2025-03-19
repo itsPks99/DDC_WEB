@@ -2,27 +2,27 @@ import React, { useState } from 'react';
 import './connectWithUs.css';
 
 const ConnectWithUs = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    message: ''
-  });
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   phone: '',
+  //   service: '',
+  //   message: ''
+  // });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData(prevState => ({
+  //     ...prevState,
+  //     [name]: value
+  //   }));
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Add your form submission logic here
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log('Form submitted:', formData);
+  //   // Add your form submission logic here
+  // };
 
   return (
     <div className="connect-with-us-container">
@@ -40,7 +40,7 @@ const ConnectWithUs = () => {
       </div>
 
       {/* Contact Form Section */}
-      <div className="contact-form-section">
+      {/* <div className="contact-form-section">
         <h2 className="form-heading">LET'S GET IN TOUCH</h2>
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="form-row">
@@ -90,7 +90,7 @@ const ConnectWithUs = () => {
           ></textarea>
           <button type="submit" className="submit-button">SUBMIT</button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };

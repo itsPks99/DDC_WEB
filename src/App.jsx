@@ -4,11 +4,8 @@ import Menu from './components/Menu/menu';
 import About from "./pages/About/about";
 import Home from "./pages/Home/home";
 import NewFooter from "./components/Footer1/newFooter";
-import ConnectWithUs from "./pages/Contact/connectWithUs/connectwithUs";
-// import Blog from "./pages/Blog";
-import Contact from "./pages/Contact/contact";
-// import Expertise from "./pages/Expertise";
-// import OurWork from "./pages/OurWork";
+import DynamicPages from "./pages/DynamicPages/dynamicPages";
+
 function App() {
   return (
     <Router>
@@ -16,13 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/blog" element={<Blog />} /> */}
-        <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/expertise" element={<Expertise />} />
-        <Route path="/our-work" element={<OurWork />} /> */}
+        <Route path="/dynamic-pages" element={<DynamicPages />} />
       </Routes>
-      {/* <Footer /> */}
-      <ConnectWithUs/>  
+      {/* <Footer /> */} 
       <NewFooter/>
     </Router>
   );

@@ -4,7 +4,9 @@ import HighlightCards from './HighlightCards/highlightCards'
 import ImageSection from './ImagesSection/imageSection'
 import KnowledgeSection from './KnowledgeSection/knowledgeSection'
 import OurExpertise from './OurExpertiesSection/ourExpertise'
-import PartnerSection from './PartnerSection/partnerSection'
+import ContactForm from './ContactForm/contactform'
+// import PartnerSection from './PartnerSection/partnerSection'
+
 
 
 function Home() {
@@ -12,11 +14,12 @@ function Home() {
     <>
     {/* <Menu /> */}
     <BuildNewCommerce />
-    <PartnerSection />
+    {/* <PartnerSection /> */}
     <OurExpertise />
     <HighlightCards />
     <ImageSection />
     <KnowledgeSection/>
+    <ContactForm />
     </>
   )
 }
