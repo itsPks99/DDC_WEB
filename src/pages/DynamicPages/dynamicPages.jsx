@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './dynamicPages.css';
+import { useLocation } from 'react-router-dom';
 
 // Brand data
 const brandsData = {
@@ -205,20 +206,26 @@ const brandsData = {
 };
 
 const DynamicPage = () => {
-  const [activeBrand, setActiveBrand] = useState('gaurav-gupta');
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const brandFromUrl = queryParams.get('brand') || 'gaurav-gupta'; // Default brand if no query
+
+  const [activeBrand, setActiveBrand] = useState(brandFromUrl);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
-  
+
+  useEffect(() => {
+    if (brandsData[brandFromUrl]) {
+      setActiveBrand(brandFromUrl);
+    }
+    setIsVideoLoaded(false); // Reset video loading state when brand changes
+  }, [brandFromUrl]);
+
   const handleBrandClick = (brandKey) => {
     setActiveBrand(brandKey);
     setIsVideoLoaded(false);
   };
 
   const currentBrand = brandsData[activeBrand];
-
-  useEffect(() => {
-    // Reset video loaded state when brand changes
-    setIsVideoLoaded(false);
-  }, [activeBrand]);
 
   return (
     <div className="dynamic-page">
