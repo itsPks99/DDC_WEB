@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './knowledgeSection.css';
 
 const KnowledgeSection = () => {
   const topLeftRef = useRef(null);
   const bottomRightRef = useRef(null);
   const containerRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const observerOptions = {
@@ -48,7 +50,7 @@ const KnowledgeSection = () => {
       <div className="knowledge-grid">
         {/* Top Left Card */}
         <div>
-        <div className="grid-item sticky-card" ref={topLeftRef}>
+        <div className="grid-item sticky-card" ref={topLeftRef} onClick={() => navigate("/case-study-1")}>
           <div className="card blue-card">
             <span className="tag">Headless</span>
             <h3>Rethinking Headless commerce</h3>

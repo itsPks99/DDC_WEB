@@ -10,7 +10,7 @@
 .cta-section {
   padding: 60px 20px;
   text-align: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import "./menu.css";
+import { HiArrowUpRight } from "react-icons/hi2"; // Importing an icon from react-icons
 
 export default function Menu({ pageColor = "#E31E24" }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,13 +36,13 @@ export default function Menu({ pageColor = "#E31E24" }) {
     <div className="menu-container">
       {/* Menu Button - hidden when menu is open */}
       <button onClick={() => setIsOpen(true)} className={`menu-button ${isOpen ? "menu-button-hidden" : ""}`}>
-        <div className="menu-icon-circle">
+        {/* <div className="menu-icon-circle">
           <div className="menu-icon-hamburger">
             <span className="line"></span>
             <span className="line"></span>
           </div>
-        </div>
-        <span className="menu-text">Menu</span>
+        </div> */}
+        <span className="menu-text">Explore <HiArrowUpRight/></span>
       </button>
 
       {/* Menu Panel */}

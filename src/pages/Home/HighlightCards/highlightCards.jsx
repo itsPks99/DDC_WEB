@@ -57,7 +57,7 @@ const HighlighthighlightCards = () => {
 
   return (
     <div className="highlight-container">
-      <h1 className="highlight-title gilroy-heavy">Trusted by the finest</h1>
+      {/* <h1 className="highlight-title gilroy-heavy">Trusted by the finest</h1> */}
       
       <button 
         className="highlight-button"

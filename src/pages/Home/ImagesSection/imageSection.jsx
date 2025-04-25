@@ -48,7 +48,7 @@ const ImageSection = () => {
     // Row 1
     [
       { src: "./assets/card1images.jpeg", alt: "Team member 1" },
-      { text: "Built" },
+      { text: "Trusted" },
       { src: "./assets/card1images.jpeg", alt: "Team member 2" },
       { src: "./assets/card1images.jpeg", alt: "Team member 3" },
       { src: "./assets/card1images.jpeg", alt: "Team member 4" },
@@ -83,7 +83,7 @@ const ImageSection = () => {
     [
       { src: "./assets/card1images.jpeg", alt: "Team member 15" },
       { src: "./assets/card1images.jpeg", alt: "Team member 16" },
-      { text: "ambitious" },
+      { text: "finest" },
       { src: "./assets/card1images.jpeg", alt: "Team member 17" },
       { src: "./assets/card1images.jpeg", alt: "Team member 18" },
       { src: "./assets/card1images.jpeg", alt: "Team member 3" },

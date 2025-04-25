@@ -16,8 +16,8 @@ function Home() {
     <BuildNewCommerce />
     {/* <PartnerSection /> */}
     <OurExpertise />
-    <HighlightCards />
     <ImageSection />
+    <HighlightCards />
     <KnowledgeSection/>
     <ContactForm />
     </>

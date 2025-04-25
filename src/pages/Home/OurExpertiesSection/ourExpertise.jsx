@@ -5,7 +5,6 @@ import './ourExpertise.css';
 const OurExpertise = () => {
   const [showOur, setShowOur] = useState(false);
   const [showExpertise, setShowExpertise] = useState(false);
-  const [activeSection, setActiveSection] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -13,17 +12,13 @@ const OurExpertise = () => {
     setTimeout(() => setShowExpertise(true), 1000);
   }, []);
 
-  const toggleSection = (section) => {
-    setActiveSection(activeSection === section ? null : section);
-  };
-
   const handleRedirect = (section) => {
     const brandMapping = {
-      strategy: "gaurav-gupta",
-      creative: "drzya-by-ridhiee-suuri",
-      technology: "masaba",
-      marketing: "ridhi-mehra",
-      analytics: "tarun-tahiliani",
+      Samsara: "Samsara",
+      Amara: "Amara",
+      Himarket: "Hi market",
+      Suri: "Suri",
+      Fllae: "Fllae",
       uxui: "gaurav-gupta",
       branding: "drzya-by-ridhiee-suuri",
       content: "masaba",
@@ -43,31 +38,26 @@ const OurExpertise = () => {
 
       <div className="expertise-sections">
         {[
-          'strategy',
-          'creative',
-          'technology',
-          'marketing',
-          'analytics',
-          'uxui',
-          'branding',
-          'content'
-        ].map((section) => (
-          <div key={section} className={`expertise-section ${activeSection === section ? 'active' : ''}`}>
-            <div className="section-header" onClick={() => toggleSection(section)}>
+          'Samsara',
+          'Amara',
+          'Hi market',
+          'Suri',
+          'Fllae'].map((section) => (
+          <div key={section} className="expertise-section">
+            <div className="section-header">
               <h2>{section.charAt(0).toUpperCase() + section.slice(1)}</h2>
             </div>
             <div className="section-content">
               <p>
-                {section === 'strategy' && "We craft personalized, data-driven strategies to keep you ahead of the competition."}
-                {section === 'creative' && "Our design team brings your vision to life with compelling storytelling and visuals."}
-                {section === 'technology' && "Using cutting-edge technology, we build scalable digital solutions for your brand."}
-                {section === 'marketing' && "We implement powerful marketing campaigns to drive engagement and conversions."}
-                {section === 'analytics' && "Data-driven insights help optimize performance and maximize ROI."}
-                {section === 'uxui' && "We create intuitive and seamless digital experiences for your audience."}
-                {section === 'branding' && "We develop strong brand identities that resonate with your target market."}
-                {section === 'content' && "Our content strategies elevate your brand’s voice and storytelling."}
+                {section === 'Samsara' && "We craft personalized, data-driven strategies to keep you ahead of the competition."}
+                {section === 'Amara' && "Our design team brings your vision to life with compelling storytelling and visuals."}
+                {section === 'Hi market' && "Using cutting-edge technology, we build scalable digital solutions for your brand."}
+                {section === 'Suri' && "We implement powerful marketing campaigns to drive engagement and conversions."}
+                {section === 'Fllae' && "We implement powerful marketing campaigns to drive engagement and conversions."}
               </p>
-              <button className="read-more-btn" onClick={() => handleRedirect(section)}>Read more</button>
+              <button className="read-more-btn" onClick={() => handleRedirect(section)}>
+                Read more
+              </button>
             </div>
           </div>
         ))}

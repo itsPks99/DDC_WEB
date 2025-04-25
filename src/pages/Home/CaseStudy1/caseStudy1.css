@@ -1,0 +1,144 @@
+.case1-section {
+    background: #afbddc; /* Light blue/gray background matching the image */
+    height: 120vh; /* Extra height for scrolling effect */
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+  }
+  
+  .case1-title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15rem;
+    font-weight: bold;
+    color: #e32b1e; /* OBEY red color */
+    z-index: 10;
+    font-family: "Arial Black", "Helvetica", sans-serif;
+    pointer-events: none;
+    text-align: center;
+    letter-spacing: -0.05em;
+  }
+  
+  .case1-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .case1-img {
+    position: absolute;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    will-change: transform, opacity;
+  }
+  
+  /* Different sizes for each image */
+  .img1 {
+    width: 380px;
+    height: 500px;
+    z-index: 2;
+  }
+  
+  .img2 {
+    width: 420px;
+    height: 320px;
+    z-index: 3;
+  }
+  
+  .img3 {
+    width: 350px;
+    height: 450px;
+    z-index: 4;
+  }
+  
+  .img4 {
+    width: 400px;
+    height: 300px;
+    z-index: 5;
+  }
+  
+  .img5 {
+    width: 320px;
+    height: 420px;
+    z-index: 6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .case1-title {
+      font-size: 10rem;
+    }
+  
+    .case1-img {
+      transform: scale(0.85);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .case1-title {
+      font-size: 6rem;
+    }
+  
+    .case1-section {
+      height: 60vh;
+    }
+  
+    .case1-img {
+      width: 70%;
+      height: auto;
+      position: absolute;
+    }
+  
+    /* Adjust horizontal positions for mobile */
+    .img1 {
+      left: 5% !important;
+      right: auto !important;
+      transform: none !important;
+    }
+    .img2 {
+      left: auto !important;
+      right: 5% !important;
+      transform: none !important;
+    }
+    .img3 {
+      left: 5% !important;
+      right: auto !important;
+      transform: none !important;
+    }
+    .img4 {
+      left: auto !important;
+      right: 5% !important;
+      transform: none !important;
+    }
+    .img5 {
+      left: 15% !important;
+      right: auto !important;
+      transform: none !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .case1-title {
+      font-size: 4rem;
+    }
+  
+    .case1-img {
+      width: 85%;
+    }
+  
+    /* Further adjust positions for very small screens */
+    .img1,
+    .img3,
+    .img5 {
+      left: 7.5% !important;
+    }
+    .img2,
+    .img4 {
+      right: 7.5% !important;
+    }
+  }
+  

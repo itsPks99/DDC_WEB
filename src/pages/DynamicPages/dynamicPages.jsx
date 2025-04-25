@@ -4,8 +4,8 @@ import { useLocation } from 'react-router-dom';
 
 // Brand data
 const brandsData = {
-  "gaurav-gupta": {
-    name: "GAURAV GUPTA",
+  "Samsara": {
+    name: "SAMSARA",
     logo: "./ALL LOGOS/hi market/Hi Pink Logo.png?height=100&width=200&text=GAURAV+GUPTA",
     title: "The Brand",
     description: "Gaurav Gupta is an Indian fashion designer known for his avant-garde designs and sculptural silhouettes.",
@@ -44,8 +44,8 @@ const brandsData = {
       }
     ]
   },
-  "drzya-by-ridhiee-suuri": {
-    name: "DRZYA BY RIDHIEE SUURI",
+  "Amara": {
+    name: "AMARA",
     logo: "https://placeholder.svg?height=100&width=200&text=DRZYA+BY+RIDHIEE+SUURI",
     title: "The Brand",
     description: "Drzya by Ridhi Suri is an Indian fashion brand known for its luxurious and contemporary designs.",
@@ -83,8 +83,8 @@ const brandsData = {
       }
     ]
   },
-  "masaba": {
-    name: "MASABA",
+  "Himarket": {
+    name: "HI MARKET",
     logo: "https://placeholder.svg?height=100&width=200&text=MASABA",
     title: "The Brand",
     description: "Masaba is a contemporary Indian fashion label known for its quirky prints and modern silhouettes.",
@@ -123,8 +123,8 @@ const brandsData = {
       }
     ]
   },
-  "ridhi-mehra": {
-    name: "RIDHI MEHRA",
+  "Suri": {
+    name: "SURI",
     logo: "https://placeholder.svg?height=100&width=200&text=RIDHI+MEHRA",
     title: "The Brand",
     description: "Ridhi Mehra is a luxury Indian fashion brand known for its elegant fusion wear.",
@@ -163,8 +163,8 @@ const brandsData = {
       }
     ]
   },
-  "tarun-tahiliani": {
-    name: "TARUN TAHILIANI",
+  "Fllae": {
+    name: "FLLAE",
     logo: "https://placeholder.svg?height=100&width=200&text=TARUN+TAHILIANI",
     title: "The Brand",
     description: "Tarun Tahiliani is a prominent Indian fashion designer who is widely regarded as one of the leading fashion designers in India.",
@@ -208,7 +208,7 @@ const brandsData = {
 const DynamicPage = () => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
-  const brandFromUrl = queryParams.get('brand') || 'gaurav-gupta'; // Default brand if no query
+  const brandFromUrl = queryParams.get('brand') || 'Samsara'; // Default brand if no query
 
   const [activeBrand, setActiveBrand] = useState(brandFromUrl);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
