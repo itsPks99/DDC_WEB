@@ -50,7 +50,9 @@ const KnowledgeSection = () => {
       <div className="knowledge-grid">
         {/* Top Left Card */}
         <div>
-        <div className="grid-item sticky-card" ref={topLeftRef} onClick={() => navigate("/case-study-1")}>
+        <div className="grid-item sticky-card" ref={topLeftRef} 
+        // onClick={() => navigate("/case-study-1") }
+        >
           <div className="card blue-card">
             <span className="tag">Headless</span>
             <h1>Rethinking Headless commerce</h1>
