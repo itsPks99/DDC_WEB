@@ -73,6 +73,11 @@
   .brands-card {
     margin-right: 2rem;
     margin-left: auto;
+    
+    max-height: 100px;
+  }
+  .brands-card .card-label {
+    font-size: 4rem;
   }
   
   .card-label {
@@ -148,7 +153,7 @@
     width: 100%;
     max-width: 400px;
     height: 350px;
-    background-image: url("/placeholder.svg?height=350&width=400");
+    background-image: url("assets/photography.jpg");
     background-size: cover;
     background-position: center;
     color: white;
@@ -157,6 +162,13 @@
     padding: 1.5rem;
   }
   
+  .person-card .card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0.5rem 0 0 0;
+  }
+
   .card-subtitle {
     font-size: 1rem;
     margin: 0;
@@ -166,8 +178,10 @@
   .card-title {
     font-size: 2rem;
     font-weight: 700;
+    color: #000;
     margin: 0.5rem 0 0 0;
   }
+  
   
   .brand-card {
     width: 100%;
@@ -177,7 +191,7 @@
   }
   
   .product-image {
-    margin: 1.5rem 0;
+    margin-top: 2.5rem;
     text-align: center;
   }
   
@@ -196,8 +210,28 @@
   
   .arrow {
     font-size: 1.5rem;
+    align-items: end;
   }
   
+  .brand-card .homeArrow-icon {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    width: 44px;
+    height: 44px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .brand-card:hover .homeArrow-icon {
+    transform: scale(1.1) rotate(45deg);
+  }
  
   /* Responsive styles */
   @media (max-width: 1200px) {

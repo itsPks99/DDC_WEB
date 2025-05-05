@@ -116,7 +116,7 @@ const ConnectWithUs = () => {
 
       <div className="cta-section">
         <h2 style={{fontSize: "5rem"}} className="cta-heading">Want to scale your brand?</h2>
-        <a href="https://wa.me/yourphonenumber" className="connect-button">
+        <a href="https://wa.me/8527274859" className="connect-button">
           <span className="whatsapp-icon">
             {/* WhatsApp SVG */}
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">

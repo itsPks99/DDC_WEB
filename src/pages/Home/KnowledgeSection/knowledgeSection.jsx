@@ -66,7 +66,7 @@ const KnowledgeSection = () => {
         {/* Top Right Image */}
         <div className="grid-item knowledge-image-container">
           <img 
-            src="./assets/images2.jpg" 
+            src="./assets/_MG_4033.JPEG" 
             alt="Person walking down stairs"
             className="grid-image"
           />
@@ -75,7 +75,7 @@ const KnowledgeSection = () => {
         {/* Bottom Left Image */}
         <div className="grid-item knowledge-image-container">
           <img 
-            src="./assets/image3.jpg" 
+            src="./assets/suripost.jpeg" 
             alt="People in office"
             className="grid-image"
           />

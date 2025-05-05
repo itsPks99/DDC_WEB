@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import "./menu.css";
 import { HiArrowUpRight } from "react-icons/hi2"; // Importing an icon from react-icons
+import { MdArrowOutward } from "react-icons/md";
+import ArrowOutward from "../../../public/assets/arrowOutward.png"; // Importing an SVG icon
+
 
 export default function Menu({ pageColor = "#E31E24" }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +45,7 @@ export default function Menu({ pageColor = "#E31E24" }) {
             <span className="line"></span>
           </div>
         </div> */}
-        <span className="menu-text">Explore <HiArrowUpRight/></span>
+        <span className="menu-text">Explore  <img style={{height:'23px', paddingLeft:'5px'}} src={ArrowOutward}/></span>
       </button>
 
       {/* Menu Panel */}

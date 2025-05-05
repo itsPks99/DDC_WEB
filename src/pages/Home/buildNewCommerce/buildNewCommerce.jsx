@@ -65,7 +65,7 @@ const BuildNewCommerce = () => {
             <div className="card-content">
               <p className="Gilroy-Light"> Brands Scaled</p>
               <h3 className="card-value">150+</h3>
-              <div className="arrow-up">↑</div>
+              
             </div>
           </div>
         </div>
@@ -95,12 +95,15 @@ const BuildNewCommerce = () => {
             <div className="card-content">
               <h3 className="card-title">Branding & Social Media Excellence</h3>
               <div className="product-image">
-                <img src="/placeholder.svg?height=150&width=250" alt="Product" />
+                <img src="/assets/aboutddc.png" alt="Product" />
               </div>
-              <div className="podcast-link">
-                {/* <p>Listen to our podcast</p>
-                <span className="arrow">→</span> */}
-              </div>
+              <svg className="homeArrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+              {/* <div className="podcast-link">
+                <p>Listen to our podcast</p>
+                <span className="arrow">→</span>
+              </div> */}
             </div>
           </div>
         </div>
