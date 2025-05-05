@@ -97,7 +97,7 @@ const KnowledgeSection = () => {
       </div>
 
       {/* Newsletter Section */}
-      <div className="newsletter-section">
+      {/* <div className="newsletter-section">
         <div className="newsletter-content">
           <h2>Stay ahead</h2>
           <p>Subscribe to our newsletter for a roundup of the latest in ecommerce, straight to your inbox.</p>
@@ -110,7 +110,7 @@ const KnowledgeSection = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

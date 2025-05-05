@@ -18,7 +18,7 @@
 }
   
 .cta-heading {
-  font-family: 'Gilroy-Heavy', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #3a2a4d;
   font-size: 32px;
   margin-bottom: 30px;
@@ -31,7 +31,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #3a2a4d;
+  background-color: black;
   color: white;
   padding: 12px 30px;
   text-decoration: none;
@@ -53,11 +53,18 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: #9c5dc0;
+  background-color: black;
   transition: all 0.3s ease;
   z-index: -1;
 }
-  
+
+ 
+.connect-button:hover {
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+}
+
 .connect-button:hover::before {
   left: 0;
 }
@@ -70,7 +77,7 @@
   
 /* Contact Form Section */
 .contact-form-section {
-  background-color: #3a2a4d;
+  background-color: #e9dcc3;
   padding: 60px 20px;
   display: flex;
   flex-direction: column;
@@ -79,11 +86,11 @@
   
 .form-heading {
   font-family: 'Gilroy-Heavy', sans-serif;
-  color: white;
+  color: black;
   font-size: 28px;
   margin-bottom: 40px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 400 !important;
 }
   
 .contact-form {
@@ -104,7 +111,7 @@
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  font-family: 'Gilroy-Heavy', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   border: 1px solid white;
   color: black;
   padding: 15px;
@@ -117,8 +124,9 @@
 .contact-form input::placeholder,
 .contact-form select::placeholder,
 .contact-form textarea::placeholder {
-  font-family: 'Gilroy-Heavy', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: black;
+  font-weight: 200;
 }
   
 .contact-form textarea {
@@ -129,8 +137,8 @@
 /* Submit Button with Slide Effect */
 .submit-button {
   font-family: 'Gilroy-Heavy', sans-serif;
-  background-color: white;
-  color: #3a2a4d;
+  background-color: black;
+  color: white;
   border: none;
   padding: 12px 40px;
   font-weight: 600;
@@ -151,13 +159,15 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: #9c5dc0;
+  background-color: black;
   transition: all 0.3s ease;
   z-index: -1;
 }
   
 .submit-button:hover {
   color: white;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
 }
   
 .submit-button:hover::before {
