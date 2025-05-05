@@ -53,9 +53,9 @@ export default function Menu({ pageColor = "#E31E24" }) {
         onMouseOut={handleMouseOut}
       >
         {[
-          { name: "Expertise", path: "/expertise" },
-          { name: "Blog", path: "/blog" },
-          { name: "OurWork", path: "/our-work" },
+          // { name: "Expertise", path: "/expertise" },
+          // { name: "Blog", path: "/blog" },
+          // { name: "OurWork", path: "/our-work" },
           { name: "Contact", path: "/contact" },
           { name: "About", path: "/about" },
           { name: "Home", path: "/" }
