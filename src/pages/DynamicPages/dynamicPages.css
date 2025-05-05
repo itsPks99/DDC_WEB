@@ -6,7 +6,7 @@
   /* margin: 0;
   padding: 0;
   box-sizing: border-box; */
-  font-family: 'Gilroy-Heavy', sans-serif;
+  font-family: 'Gilroy', sans-serif;
 }
 
 body {
@@ -180,15 +180,16 @@ body {
 .service-tag {
   padding: 8px 20px;
   border-radius: 50px;
-  border: 1px solid #a855f7;
-  color: #a855f7;
+  border: 1px solid #000;
+  color: #000;
   font-size: 0.9rem;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .service-tag:hover {
-  background-color: #a855f7;
+  background-color: #000;
+
   color: white;
 }
 
