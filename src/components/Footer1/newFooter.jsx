@@ -36,7 +36,7 @@ const NewFooter = () => {
           <div className="newfooter-nav">
             <a href="/privacy" className="newfooter-link">Privacy Policy</a>
             <a href="/terms" className="newfooter-link">Terms of Services</a>
-            <a href="/contact" className="newfooter-link">Contact Us</a>
+            <a href="/contactUs" className="newfooter-link">Contact Us</a>
             <a href="/refund" className="newfooter-link">Refund Policy</a>
           </div>
 

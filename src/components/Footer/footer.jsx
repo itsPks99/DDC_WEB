@@ -1,6 +1,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import "./footer.css";
+import Link from "react-router-dom";
 
 const Footer = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -92,7 +93,7 @@ const Footer = () => {
                 <li><a href="#">Expertise</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><Link to='/contactUs'>Contact Us</Link> </li>
                 <li><a href="#">Careers</a></li>
               </ul>
             </div>

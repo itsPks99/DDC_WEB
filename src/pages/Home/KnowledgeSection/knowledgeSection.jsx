@@ -53,7 +53,9 @@ const KnowledgeSection = () => {
         <div className="grid-item sticky-card" ref={topLeftRef} onClick={() => navigate("/case-study-1")}>
           <div className="card blue-card">
             <span className="tag">Headless</span>
-            <h3>Rethinking Headless commerce</h3>
+            <h1>Rethinking Headless commerce</h1>
+            <h3>Rediscoving Shopify's power</h3>
+            
             <svg className="homeArrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
@@ -84,7 +86,8 @@ const KnowledgeSection = () => {
         <div className="grid-item sticky-card" ref={bottomRightRef}>
           <div className="card gold-card">
             <span className="tag">NFT Success</span>
-            <h3>Beyond the products</h3>
+            <h1>Beyond the products</h1>
+            <h3>Ask us to redesign and got everyones talking</h3>
             <svg className="homeArrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>

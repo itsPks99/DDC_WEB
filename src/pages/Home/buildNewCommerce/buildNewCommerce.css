@@ -6,15 +6,16 @@
     min-height: 100vh;
     background-color: #a7c9d7;
     overflow: hidden;
-    /* padding: 2rem 2rem; */
-    padding-bottom: 50px;
+    /* padding: 0px 0px; */
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
     font-family: 'Gilroy-Regular', sans-serif;
   }
  
   .commerce-container {
     position: relative;
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 2rem ;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -62,7 +63,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-out;
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
   }
   
   .conversion-card {
@@ -90,13 +91,15 @@
   .chart {
     display: flex;
     align-items: flex-end;
-    height: 60px;
+    height: 120px;
+    
     gap: 8px;
   }
   
   .bar {
     flex: 1;
-    background-color: #e6d9c2;
+    
+    background-color: #a7c9d7;
     border-radius: 4px;
   }
   
@@ -109,12 +112,13 @@
   }
   
   .bar-3 {
-    height: 40%;
+    height: 70%;
   }
   
   .bar-4 {
     height: 80%;
-    background-color: #c4ad7c;
+    
+    background-color: #458ba8;
   }
   
   .arrow-up {
@@ -197,6 +201,9 @@
  
   /* Responsive styles */
   @media (max-width: 1200px) {
+    .build-commerce-section {
+      padding: 0px;
+    }
     .stats-cards,
     .info-cards {
       justify-content: center;
@@ -210,7 +217,7 @@
   
   @media (max-width: 768px) {
     .build-commerce-section {
-      padding: 1rem;
+      padding: 0px;
     }
   
     .headline {
@@ -226,7 +233,7 @@
       max-width: 100%;
     }
     .build-commerce-section{
-      width: 94%;
+      width: 100%;
     }
   
   }
@@ -237,7 +244,7 @@
     }
 
     .build-commerce-section{
-      width: 94%;
+      width: 100%;
     }
   
     .card-value {

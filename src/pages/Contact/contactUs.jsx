@@ -2,9 +2,9 @@ import { motion, useAnimation } from 'framer-motion';
 import { ArrowLeft, Check, Plus } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import ArrowButton from '../../components/ArrowHover/arrowhover';
-import './contact.css';
+import './contactUs.css';
 
-const Contact = () => {
+const ContactUs = () => {
   const [currentView, setCurrentView] = useState('main');
   const [email, setEmail] = useState('');
   const [positions, setPositions] = useState({});
@@ -340,4 +340,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactUs;
